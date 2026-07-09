@@ -1,0 +1,40 @@
+.photo {
+	background-image: url("bg.jpg");
+	position: relative;
+	height: 100vh;
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.center {
+	position: relative;
+	text-align: center;
+	line-height: 15px;
+}
+h1,h2,p,i {
+	color: white;
+}
+h1 {
+	font-size: 60px;
+}
+
+i {
+	margin-right: 10px;
+}
+.photo img {
+	margin-bottom: 50px;
+	width: 200px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+}
+
+@media only screen and (max-width: 575px){
+	h1 {
+	font-size: 40px;
+	}
+}

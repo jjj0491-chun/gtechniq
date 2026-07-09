@@ -1,0 +1,424 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<meta name="facebook-domain-verification" content="ui0zkk2zo5s2ey4w218chir2x29r4r" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Mitr|Noto+Sans+TC|Open+Sans|Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lightslider.css">
+	<!-- JS -->
+	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>   
+	<script type="text/javascript" src="js/lightslider.js"></script>
+	             
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/b5a91104df.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" crossorigin="anonymous" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" crossorigin="anonymous"></script>
+	<!-- Meta Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window, document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '542361817011997');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=542361817011997&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
+	<title>Our Products - Gtechniq Malaysia</title>
+</head>
+<style>
+	.dealer-container {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 20px;
+		padding: 60px 0;
+	}
+	.dealer-box {
+		padding: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+		display: flex;
+		gap: 20px;
+	}
+	.dealer-img {
+		width: 100%;
+		max-width: 240px;
+		aspect-ratio: 1/1;
+	}
+	.dealer-img img {
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+	.dealer-content {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		& h5 {
+			font-size: 18px;
+    		font-weight: 700;
+		}
+	}
+	.dealer-content li {
+		/* position: relative; */
+		display: flex;
+		gap: 10px;
+		font-size: 14px;
+		color: #404040;
+		margin-bottom: 10px;
+		& a, p {
+			color: #404040;
+		}
+	}
+	.dealer-content li::before {
+		/* position: absolute; */
+		font-family: FontAwesome;
+		font-size: 15px;
+		color: #ff0000;
+	}
+	.dealer-address::before {
+		content: '\f3c5';
+	}
+	.dealer-phone::before {
+		content: '\f095';
+	}
+	.dealer-fb::before {
+		content: '\f09a';
+	}
+	@media screen and (max-width: 1024px) {
+		.dealer-container {
+			display: grid;
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			gap: 20px;
+			padding: 60px 0;
+		}
+		.dealer-box {
+			flex-direction: column;
+		}
+		.dealer-img {
+			max-width: 400px;
+			aspect-ratio: 1/1;
+			height: 180px;
+		}
+	}
+</style>
+<body>
+	<div class="popup">
+		<div class="overlay"></div>
+		<div class="pop-content">
+			<div class="close-btn" onclick="togglePopup()">&times;</div>
+			<h1>IMPORTANT ANNOUNCEMENT</h1>
+			<p>Dear all valued customers,<br>Notice is hereby given that the following outlets is not the accredited detailer or authorized dealer of GTECHNIQ Malaysia.<br><b>Grechniq Bangi 5S TINT SDN BHD</b><br>It is hereby announced that “Grechniq Bangi 5S TINT SDN BHD” is NOT in any way connected to GTECHNIQ MALAYSIA.</p>
+		</div>
+	</div>
+	<header>
+		<div class="nav-content" id="nav-content">
+			<div class="logo">
+				<a id="logo" href="home.html">
+					<img src="images/logo.svg">
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li>
+					<a href="about.html">About</a>
+				</li>
+				<li>
+					<a href="products.html">Our Products</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="our-dealers.html">Our Dealers</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</div>
+	</header>
+	<section class="dealers-title">
+		<div class="dealers-title-bg">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-10 offset-1">
+						<div class="dealers-title-content">
+							<h1>Dealers</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="dealers-map">
+		<div class="container-fluid dealers-map-container">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<iframe src="https://my.atlistmaps.com/map/ea996897-22c1-4b15-8c4e-f8461002742f?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="dealer-container col-10 offset-1">
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/ara_damansara.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>GTECHNIQ ARA DAMANSARA, PURE AQUA TECHNOLOGY SDN BHD</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/VpqpoaHeZA2W3MRy8">51, Jalan PJU 1a/16, Taman Perindustrian Jaya, 47301 Petaling Jaya, Selangor, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-18-3868069</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/sg_petani.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq SG Petani, SW ONE STOP AUTO</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/99EMgvHp2i2xwa2f8">1, Jalan Cempaka, Bandar Amanjaya, 08000 Sungai Petani, Kedah, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-194749355</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/vb_kuching.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Kuching, V.B. MOTOR COMPANY</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/cLgCbjpwGE4Yjyfe9">NO.23, LOT 8636, Jalan Simpang Tiga, Kampung Kenyalang Park, 93300 Kuching, Sarawak, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-172221380</p>
+								</li>
+								<li class="dealer-fb">
+									<a href="https://www.facebook.com/vbgtechniq.kch?_rdc=1&_rdr#">VB Gtechniq Kuching</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/alor_setar.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Alor Setar, FIRST COOL TINT SHOP</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/18qCUsDBduDMdJmb6">No 37, GROUND FLOOR, Jalan Gangsa, Kompleks Perniagaan Utama, 05350 Alor Setar, Kedah, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-175007381</p>
+								</li>
+								<li class="dealer-fb">
+									<a href="https://www.facebook.com/firstcooltinted">First Cool Tint Shop</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/seremban.jpeg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Seremban  YKS Smart Enterprise</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/9Z8FNjTbzfo2wzWf9">56, Lor Industri Galla 5/1, Galla Industrial Park, 70200 Seremban, Negeri Sembilan, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-198572321</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/penang_bm.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Malaysia flagship store(Penang BM)Emax Coating Supplies Enterprise</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/L4uLkNoP8whW1YDH9">No. 39, Jalan Limau Manis 3, Taman Limau Manis, 14000 Bukit Mertajam, Pulau Pinang, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-143033306</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/glenmarie.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Glenmarie CYHR Resoures</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/ZAppyV8nrXjHBbSD6">1, Jalan Warden U1/76, Hicom-glenmarie Industrial Park, 40150 Shah Alam, Selangor, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-122877168</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/miri.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Miri,  Detailer Lab</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/4kRtnkUWBPuW4tz2A">NO.12 SEDC. Piasau Industrial Estate, Jalan Piasau, 98008 Miri, Sarawak., Miri, Malaysia, 98000</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-13-830-6888</p>
+								</li>
+								<li class="dealer-fb">
+									<a href="https://www.facebook.com/gtechniqmiri/">Gtechniq Miri</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/penang.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Penang</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/75cSP5DrcAiictpb8">496-g, Jalan Air Itam, Kampung Baharu, 11400 George Town, Pulau Pinang, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-164222937</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/bangsar.jpeg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Bangsar Common Made Sdn Bhd</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/BCTEAb1Xt5HYK5Aq9">127, Jalan Maarof, Bangsar, 59000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-143931534</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/ipoh.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Ipoh PTG Guard Sdn Bhd</h5>
+							<ul>
+								<li class="dealer-address">
+									<a href="https://maps.app.goo.gl/GQsGXGspSRfeZWSN8">18-20A Hala Datoh, Satu, Jalan Datoh, 30000 Ipoh, Perak, 馬來西亞</a>
+								</li>
+								<li class="dealer-phone">
+									<p>+60-125175305</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="dealer-box">
+						<div class="dealer-img">
+							<img src="images/slider2.jpg" alt="">
+						</div>
+						<div class="dealer-content">
+							<h5>Gtechniq Labuan Advance Auto Detailing & Services</h5>
+							<ul>
+								<li class="dealer-address">
+									<p>Jalan Mohammed Salleh, 87000 Labuan, Wilayah Persekutuan Labuan, 馬來西亞</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="contact-us">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="contact-us-container col-10 offset-1">
+					<h2>Contact Us</h2>
+					<p>Submit a question or comment</p>
+					<form class="contact-form" action="contactform.php" method="post">
+						<input type="text" class="contact-form-text" name="name" placeholder="Name" required>
+						<input type="text" class="contact-form-text" name="mail" placeholder="Email">
+						<input type="text" class="contact-form-text" name="subject" placeholder="Subject">
+						<textarea name="message" class="contact-form-text" placeholder="How can we help?"></textarea>
+						<button type="submit" class="contact-form-btn" name="submit">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container-fluid footer-container">
+			<div class="row">
+				<div class="col-10 offset-1 footer-content">
+					<p><small>©  2020 GTECHNIQ MALAYSIA ALL RIGHTS RESERVED</small></p>
+					<p><small>Site by Wen-Chun, Chen</small></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/app.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
